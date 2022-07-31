@@ -3,22 +3,39 @@
  
  <div class="container">
  <center>
-
-      <br>
-      <br>
-      <br>
-      <br>
       <br>
       <br>
 
  
-         <div><h2 >REGISTRO DE RENDIMIENTO </h2></div>
+         
       <br>   
       <br>
-      <div id="contenido" class="shadow-lg p-3 mb-5 bg-white rounded" >
+      <div id="contenido"  style="width: 1250px; margin-left :-40px;" class="shadow-lg p-3 mb-5 bg-white rounded" >
+       <div><h2 >REGISTRO DE RENDIMIENTO </h2></div>
         <br>
 
-      <div class="form-group form-inline">
+    
+
+
+
+
+<button type="button" style="margin-right: -73%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+
+                <!--modal -->
+                <!-- Modal -->
+                    <div id="agregar" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+
+                          
+
+ <div class="form-group form-inline">
 
         
       <div><h5>Nombre</h5><input  class="form-control" id="Nombre" name="usuario" type="text"></div>  
@@ -152,33 +169,58 @@
        </div>  
      
          <br>
-         <div><h5>Promedio:</h5><input  class="form-control" id="Promedio" name="usuario" type="text"></div>   
+         <div><h5>Promedio:</h5><input  class="form-control" id="Promedio" name="usuario" type="text"></div> 
+
+
+
+                          </div>
+
+
+                          <div class="modal-footer">
+                            <button  type="submit" onclick="guardarrendimiento()" class="btn btn-outline-success" style='width:90px; height:40px'>Guardar</button>
+
+                            <button type="button" onclick="modificarrendimiento()" class="btn btn-outline-dark" style='width:90px; height:40px'>Modificar</button>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           
+
+
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
+
          <br>
          <br>
-         <br></div>
-
-
-      </div>
-
-      <div  class="con form-inline shadow-lg p-3 mb-5 bg-white rounded" style="width:400px;">
-  
-    <br>
-
-<button  type="submit" onclick="guardarrendimiento()" class="btn btn-outline-success" style='width:90px; height:40px'>Guardar</button>
-<p></p>
-<button type="button" onclick="buscarrendimiento()" class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
-<p></p>
-<button type="button" onclick="modificarrendimiento()" class="btn btn-outline-dark" style='width:90px; height:40px'>Modificar</button>
-<p></p>
-<button type="button" onclick="eliminarrendimiento()" class="btn btn-outline-danger" style='width:90px; height:40px'>Eliminar</button>
-</div>
-
+            <br></div>
 
 
 <div class="col-md-6 offset-md-4" style=" width: 530px;">                   
 <div id="trendimiento">
 </div>
  </div>
+
+
+
+
+
+      
+
+
+      </div>
+
+
+
 
 
 

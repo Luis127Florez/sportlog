@@ -26,7 +26,10 @@
 <br>
 <br>
 
- <button type="button" style="margin-right: -75%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+
+     <input style="width: 400px; display: initial;" type="text"  id="categoria1"  class="form-control" placeholder="Nombre / año-mes-dia" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+
+ <button type="button" style="margin-right: -43%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
 
                 <!--modal -->
                 <!-- Modal -->

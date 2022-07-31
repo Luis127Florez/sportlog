@@ -1,3 +1,18 @@
+$(document).ready(function(){
+ $("#categoria1").keyup(function(){
+ _this = this;
+ // Show only matching TR, hide rest of them
+
+
+ $.each($("#tinventario tbody tr"), function() {
+ if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+ $(this).hide();
+ else
+ $(this).show();
+ });
+ });
+});
+
  function validar() {
     var nombre = "";
     var fecha  = "";
@@ -185,18 +200,23 @@ function modificar() {
 
 function eliminar() {
     // body...
-    var nombre = "";
+    
 
-     $(this).parents("th").find(".Nombre").each(function() {
-          nombre = $(this).html() + "\n";
-        });
+    var nombre = $(this).find("td:last-child").text();
+
+    //event.target.parentNode.parentNode.remove();
+   // $("#"+Nombre).html() = nombre ;
+
+//    $(this).parents("th").find(".Nombre").each(function() {
+//         nombre = $(this).html() + "\n";
+//    });
 
 
   //  nombre = $("#Nombre").val(); 
 
 
     if (nombre.length == 0) {
-       alertify.error("favor llenar el campo Nombrewswsws para eliminar "+nombre)
+       alertify.error("favor llenar el campo Nombre para eliminar "+nombre)
 
      console.log(nombre);
 

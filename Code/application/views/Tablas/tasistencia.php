@@ -1,7 +1,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('asistentes/css/asistencias.css');?>">
 
-<div id="contenido" class="shadow-lg p-3 mb-5 bg-white rounded" > <div class="form-group form-inline">       
-<div class="scrollbar scrollbar-success">
+<div id="contenido" class="shadow-lg p-3 mb-5 bg-white rounded" style="width:934px;
+    height: 334px;  margin-left: 74px;" > 
+  <div class="form-group form-inline">       
+<div class="scrollbar scrollbar-success" style="height: 273px;
+    width: 890px">
 <table class="table table-hover table-bordered"   >
  <thead class="thead-dark">
    <tr>

@@ -1,7 +1,9 @@
-<div id="contenido" class="shadow-lg p-3 mb-5 bg-white rounded" style="width: 1250px; margin-left: -530px; padding: 0px; height: 380px;" >
+<br>
+
+<div id="contenido" class="shadow-lg p-3 mb-5 bg-white rounded" style="width: 1199px; margin-left: -530px; padding: 0px; height: 380px;" >
       <div class="form-group form-inline">
         
-<div class="scrollbar scrollbar-success">
+<div class="scrollbar scrollbar-success" style="width:1166px">
 <table class="table table-hover table-bordered" >
  <thead class="thead-dark">
    <tr>
@@ -16,6 +18,7 @@
       <th scope="col">Punteria</th> 
       <th scope="col">Control</th> 
       <th scope="col">Promedio</th>
+      <th scope="col">accion</th>
    </tr>
  </thead>
  <tbod3>
@@ -78,6 +81,11 @@
            <?php
              echo $data->promedio;
            ?>
+         </td>
+         <td>
+           <button type="button" onclick="buscarrendimiento()" class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
+
+           <button type="button" onclick="eliminarrendimiento()" class="btn btn-outline-danger" style='width:90px; height:40px'>Eliminar</button>
          </td>
        </tr>
    <?php

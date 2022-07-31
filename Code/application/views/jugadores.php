@@ -1,11 +1,4 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('asistentes/css/jugadores.css');?>">
-<br> 
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br> 
 <br>
 <br>
 <br>
@@ -17,7 +10,23 @@
     <h1>Jugadores</h1>
   </center>
 <br>
- <form class="needs-validation" novalidate width="60%" border="1px" align="center">
+
+
+<button type="button" style="margin-right: -75%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+
+
+<div id="agregar" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+
+
+
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Nombre</label>
@@ -126,34 +135,52 @@
         Por favor Colocar el Dato.
       </div>
     </div>
+
+
+
+
   </div>
+     <div class="modal-footer">
+      <button type="button" id="" onclick="guardarjugador()" class="btn btn-outline-success"   style='width:90px; height:40px '>Guardar</button>
+
+      <button type="button" onclick="modificarjugador()" class="btn btn-outline-dark"  style='width:90px; height:40px'>Modificar</button>
+
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+     </div>
+   </div>
+
+
+
+
+
+ 
+  </div>
+
+
+
+
+<div class="col-md-6 offset-md-4" style=" width: 530px; " >                   
+<div id="tjugadores"></div>
+ </div>
+  
+
+
   </div>
   </center>
 
 
 
 
-<center>
-  <div class="con form-inline shadow-lg p-3 mb-5 bg-white rounded" style="width:400px;">
-  
-    <br>
-<button type="button" id="" onclick="guardarjugador()" class="btn btn-outline-success"   style='width:90px; height:40px '>Guardar</button>
-<p></p>
-<button type="button" onclick="buscarjugador()" class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
-<p></p>
-<button type="button" onclick="modificarjugador()" class="btn btn-outline-dark"  style='width:90px; height:40px'>Modificar</button>
-<p></p>
-<button type="button" onclick="eliminarjugador()" class="btn btn-outline-danger"  style='width:90px; height:40px'>Eliminar</button>
-</div>
-</center>
+
 </form>
 
 <br>
 <br>
 
-<div class="col-md-6 offset-md-4" style=" width: 530px; " >                   
-<div id="tjugadores"></div>
- </div>
+
 
 
 

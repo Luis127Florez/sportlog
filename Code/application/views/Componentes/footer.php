@@ -7,10 +7,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 </div>
 <div class="alert alert-dark" role="alert">
     &#169; derechos de autor a : Luis antonio Florez Gil</div>	
