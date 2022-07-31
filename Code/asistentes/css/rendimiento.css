@@ -1,0 +1,113 @@
+body{
+background-image: url('../imagenes/rendimiento.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+ .form-control{
+
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+ }
+
+ #Nombre{
+margin-left:  20px;
+ width: 250px; 
+    right: 200;
+ }
+ #Nid{
+ width: 250px; 
+    right: 200;
+ }
+ #Posicion{
+ width: 200px; 
+    right: 200;
+ }
+ #Velocidad{
+ width: 160px; 
+    right: 200;
+ }
+ #Destreza{
+ width: 165px; 
+    right: 200;
+ }
+ #Agilidad{
+    margin-left: 30px;
+ width: 170px; 
+    right: 200;
+ }
+ #Resistencia{
+ width: 175px; 
+    right: 200;
+ }
+  #Disciplina{
+ width: 170px; 
+    right: 200;
+ }
+
+ #Punteria{
+ width: 170px; 
+    right: 200;
+ }
+  #Control{
+ width: 170px; 
+    right: 200;
+ }
+
+ #Promedio{
+ width: 170px; 
+    right: 200;
+ }
+
+.Rendimiento:hover{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.Rendimiento{
+	margin-left: 30px;
+    color: white;
+	border-radius: 10px;
+	background-color: green;
+	width: 165px; 
+	right: 200;
+	margin: auto;
+}
+
+
+.rendiRendimiento{
+	margin-left: 20px;
+}
+#contenido{
+    width: 1200px;
+}
+
+
+
+.scrollbar {
+margin-left: 30px;
+float: left;
+height: 300px;
+width:1340px;
+background: #fff;
+overflow-y: scroll;
+margin-bottom: 25px;
+}
+
+.scrollbar-success::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-success::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-success::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #00C851; }
+
