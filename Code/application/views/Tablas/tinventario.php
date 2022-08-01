@@ -40,7 +40,7 @@
          </td> 
          <td>
           <button type="button" onclick="buscar()" data-toggle="modal" data-target="#agregar" class="btn btn-outline-primary"  style='width:90px; height:40px'>Detalle</button>
-        <button type="button" onclick="eliminar()" class="btn btn-outline-danger"  style='width:90px; height:40px'>Eliminar</button>
+        <button type="button" onclick="eliminar('<?php echo $data->Nombre;?>')" class="btn btn-outline-danger"  style='width:90px; height:40px'>Eliminar</button>
         
             
          </td>

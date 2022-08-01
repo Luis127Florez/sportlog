@@ -198,11 +198,11 @@ function modificar() {
 
 
 
-function eliminar() {
+function eliminar(Nombre) {
     // body...
     
 
-    var nombre = $(this).find("td:last-child").text();
+    var nombre = Nombre;
 
     //event.target.parentNode.parentNode.remove();
    // $("#"+Nombre).html() = nombre ;
