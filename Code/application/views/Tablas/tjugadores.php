@@ -71,9 +71,9 @@
            ?>
          </td>
          <td>
-           <button type="button" onclick="buscarjugador()" class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
+ <button type="button" onclick="buscarjugador('<?php echo $data->Numero_de_Identificacion;?>')"  data-toggle="modal" data-target="#agregar"class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
 
-           <button type="button" onclick="eliminarjugador()" class="btn btn-outline-danger"  style='width:90px; height:40px'>Eliminar</button>
+<button type="button" onclick="eliminarjugador('<?php echo $data->Numero_de_Identificacion;?>')" class="btn btn-outline-danger"  style='width:90px; height:40px'>Eliminar</button>
          </td>
 
        </tr>

@@ -1,4 +1,21 @@
 
+$(document).ready(function(){
+ $("#categoria1").keyup(function(){
+ _this = this;
+ // Show only matching TR, hide rest of them
+
+
+ $.each($("#tjugadores tbody tr"), function() {
+ if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+ $(this).hide();
+ else
+ $(this).show();
+ });
+ });
+});
+
+
+
 $('.input-number').on('input', function () { 
     this.value = this.value.replace(/[^0-9.]/g,'');
 });
@@ -88,13 +105,12 @@ function guardarjugador(){
 
 
 
-function buscarjugador() {
+function buscarjugador(Numero_de_Identificacion) {
     // body...
 
-    var identificacion = 0;
+    var identificacion = Numero_de_Identificacion;
     var ruta = "";
 
-    identificacion = $("#Identificacion").val();  
 
      if (identificacion.length == 0) {
             alertify.error("favor llenar el campo Identificacion para Buscar")
@@ -209,11 +225,11 @@ function modificarjugador() {
 }
 
 
-function eliminarjugador() {
+function eliminarjugador(Numero_de_Identificacion) {
     // body...
     var identificacion = 0;
     
-    identificacion = $("#Identificacion").val();
+    identificacion = Numero_de_Identificacion;
     
     if (identificacion.length == 0) {
             alertify.error("favor llenar el campo Identificacion para eliminar")

@@ -10,9 +10,10 @@
     <h1>Jugadores</h1>
   </center>
 <br>
+<input style="width: 400px; display: initial;" type="text"  id="categoria1"  class="form-control" placeholder="Nombre /Fecha " aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
 
 
-<button type="button" style="margin-right: -75%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+<button type="button" style="margin-right: -48%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
 
 
 <div id="agregar" class="modal fade" role="dialog">
@@ -67,8 +68,8 @@
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationCustom03">Numero_de_Identificacion</label>
-      <input type="number" class="form-control" id="Identificacion" placeholder="Numero_de_Identificacion" required>
+      <label for="validationCustom03">Numero de Identificacion</label>
+      <input type="number" class="form-control" id="Identificacion" placeholder="Numero de Identificacion" required>
       <div class="invalid-feedback">
         Por favor Colocar el Dato.
       </div>

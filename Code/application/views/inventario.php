@@ -27,9 +27,9 @@
 <br>
 
 
-     <input style="width: 400px; display: initial;" type="text"  id="categoria1"  class="form-control" placeholder="Nombre / año-mes-dia" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+     <input style="width: 400px; display: initial;" type="text"  id="categoria1"  class="form-control" placeholder="Nombre /Fecha " aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
 
- <button type="button" style="margin-right: -43%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+ <button type="button" style="margin-right: -43%;" class="btn btn-outline-success" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
 
                 <!--modal -->
                 <!-- Modal -->
@@ -44,8 +44,6 @@
                           <div class="modal-body">
 
                           
-
-
 <div class="col-md-6" >
     <label>Nombre </label>
     <input type="text" class="form-control" id="Nombre" placeholder="Nombre" >
@@ -73,9 +71,13 @@
 
 
                           <div class="modal-footer">
-                            <button type="button" onclick="guardar()" class="btn btn-outline-success"  style='width:90px; height:40px'>Guardar</button>
-                            <button type="button" onclick="modificar()" class="btn btn-outline-primary"  style='width:90px; height:40px'>Modificar</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+ <button type="button" onclick="guardar()" class="btn btn-outline-success"  style='width:90px; height:40px' id="Guardar">Guardar</button>
+
+
+ <button type="button"  onclick="modificar()" class="btn btn-outline-primary"  style='width:90px; height:40px' id="editar">Modificar</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
                         </div>
 

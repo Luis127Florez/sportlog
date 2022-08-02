@@ -1,3 +1,17 @@
+
+$(document).on("click", ".btn-outline-primary", function () {
+  $("#Guardar").hide();
+  $("#editar").show();
+});
+
+
+$(document).on("click", ".btn-outline-success", function () {
+  $("#Guardar").show();
+  $("#editar").hide();
+});
+
+
+
 $(document).ready(function(){
  $("#categoria1").keyup(function(){
  _this = this;
@@ -99,13 +113,14 @@ function guardar() {
 
 
 
-function buscar() {
+function buscar(Nombre) {
     
 
-    var nombre = "";
+    var nombre = Nombre;
+
 
     var ruta = "";
-    nombre = $("#Nombre").val(); 
+    //nombre = $("#Nombre").val(); 
 
     if (nombre.length == 0) {
             alertify.error("favor llenar el campo Nombre para buscar")
@@ -130,6 +145,7 @@ function buscar() {
         respuesta = '{"respuestas": ['+data+']}'; 
         obj = JSON.parse(respuesta);
         if(obj.respuestas[0]!= false){
+            $("#Nombre").val(obj.respuestas[0].Nombre);
             $("#Fecha").val(obj.respuestas[0].Fecha);
             $("#Cantidad").val(obj.respuestas[0].Cantidad_de_articulos);
             $("#Estado").val(obj.respuestas[0].Estado);            
