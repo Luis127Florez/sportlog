@@ -13,7 +13,7 @@
 <input style="width: 400px; display: initial;" type="text"  id="categoria1"  class="form-control" placeholder="Nombre /Fecha " aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
 
 
-<button type="button" style="margin-right: -48%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+<button type="button" style="margin-right: -48%;" class="btn btn-outline-success" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
 
 
 <div id="agregar" class="modal fade" role="dialog">
@@ -142,9 +142,9 @@
 
   </div>
      <div class="modal-footer">
-      <button type="button" id="" onclick="guardarjugador()" class="btn btn-outline-success"   style='width:90px; height:40px '>Guardar</button>
+      <button type="button" id="Guardar" onclick="guardarjugador()" class="btn btn-outline-success"   style='width:90px; height:40px '>Guardar</button>
 
-      <button type="button" onclick="modificarjugador()" class="btn btn-outline-dark"  style='width:90px; height:40px'>Modificar</button>
+      <button type="button" id="editar" onclick="modificarjugador()" class="btn btn-outline-dark"  style='width:90px; height:40px'>Modificar</button>
 
       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>

@@ -11,15 +11,16 @@
       <br>   
       <br>
       <div id="contenido"  style="width: 1250px; margin-left :-40px;" class="shadow-lg p-3 mb-5 bg-white rounded" >
-       <div><h2 >REGISTRO DE RENDIMIENTO </h2></div>
+       <div><h2 >Registro De Rendimiento </h2></div>
         <br>
 
     
 
 
+<input style="width: 400px; display: initial;" type="text"  id="categoria1"  class="form-control" placeholder="Nombre /Fecha " aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
 
 
-<button type="button" style="margin-right: -73%;" class="btn btn-primary" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
+<button type="button" style="margin-right: -53%;" class="btn btn-outline-success" data-toggle="modal" data-target="#agregar">Agregar Articulo</button>
 
                 <!--modal -->
                 <!-- Modal -->
@@ -33,13 +34,12 @@
                           </div>
                           <div class="modal-body">
 
-                          
-
- <div class="form-group form-inline">
-
+        <div class="row">
+          
+       
         
-      <div><h5>Nombre</h5><input  class="form-control" id="Nombre" name="usuario" type="text"></div>  
-      <div><h5>N° de indentificacion </h5><input  class="form-control" id="Identificacion" name="usuario" type="text"></div> 
+      <div class="col-xs-6" style="max-width: 97%;"><h5>Nombre</h5><input class="form-control" id="Nombre" name="usuario" type="text"></div>  
+      <div class="col-xs-6" ><h5>N° de indentificacion </h5><input  class="form-control" id="Identificacion" name="usuario" type="text"></div> 
       <div><h5>Posicion de juego</h5> <select name="op1"  id="Posicion"  class="form-control"> 
          <option ></option>
           <option > Delantero</option>
@@ -88,8 +88,7 @@
           <option value="10">10</option>              
          
          </select></div>  
-       </div>
-         <div class="form-group form-inline"> 
+  
          <br>
            <div><h5>Agilidad</h5> <select name="op1" id="Agilidad" onchange="promedio()" class="form-control"> 
             <option ></option>
@@ -171,15 +170,15 @@
          <br>
          <div><h5>Promedio:</h5><input  class="form-control" id="Promedio" name="usuario" type="text"></div> 
 
+ </div>
 
-
-                          </div>
+                    
 
 
                           <div class="modal-footer">
-                            <button  type="submit" onclick="guardarrendimiento()" class="btn btn-outline-success" style='width:90px; height:40px'>Guardar</button>
+                            <button  type="submit" id="Guardar" onclick="guardarrendimiento()" class="btn btn-outline-success" style='width:90px; height:40px'>Guardar</button>
 
-                            <button type="button" onclick="modificarrendimiento()" class="btn btn-outline-dark" style='width:90px; height:40px'>Modificar</button>
+                            <button type="button" id="editar" onclick="modificarrendimiento()" class="btn btn-outline-dark" style='width:90px; height:40px'>Modificar</button>
 
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                            

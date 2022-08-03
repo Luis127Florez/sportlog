@@ -1,3 +1,30 @@
+$(document).on("click", ".btn-outline-primary", function () {
+  $("#Guardar").hide();
+  $("#editar").show();
+});
+
+
+$(document).on("click", ".btn-outline-success", function () {
+  $("#Guardar").show();
+  $("#editar").hide();
+});
+
+$(document).ready(function(){
+ $("#categoria1").keyup(function(){
+ _this = this;
+ // Show only matching TR, hide rest of them
+
+
+ $.each($("#trendimiento tbody tr"), function() {
+ if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+ $(this).hide();
+ else
+ $(this).show();
+ });
+ });
+});
+
+
 function limpiar(){
     $("#Nombre").val("");
     $("#Identificacion").val("");
@@ -89,12 +116,11 @@ function guardarrendimiento(){
 }
 
 
-function buscarrendimiento() {
+function buscarrendimiento(Numero_de_Identificacion) {
     // body...
-    var identificacion = 0 ;
+    var identificacion = Numero_de_Identificacion;
     var ruta = "";
 
-    identificacion = $("#Identificacion").val();  
      if (identificacion.length == 0) {
             alertify.error("favor llenar el campo identificacion para Buscar")   
         }else{ 
@@ -218,11 +244,10 @@ function modificarrendimiento() {
   }
 }
 
-function eliminarrendimiento() {
+function eliminarrendimiento(Numero_de_Identificacion) {
     // body...
-    var identificacion = 0;
+    var identificacion = Numero_de_Identificacion;
     
-    identificacion = $("#Identificacion").val();
 
     if (identificacion.length == 0) {
             alertify.error("favor llenar el campo identificacion para Eliminar")   

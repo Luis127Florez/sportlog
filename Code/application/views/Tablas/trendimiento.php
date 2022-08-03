@@ -83,9 +83,9 @@
            ?>
          </td>
          <td>
-           <button type="button" onclick="buscarrendimiento()" class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
+           <button type="button" onclick="buscarrendimiento('<?php echo $data->Numero_de_Identificacion;?>')" data-toggle="modal" data-target="#agregar" class="btn btn-outline-primary" style='width:90px; height:40px'>Buscar</button>
 
-           <button type="button" onclick="eliminarrendimiento()" class="btn btn-outline-danger" style='width:90px; height:40px'>Eliminar</button>
+           <button type="button" onclick="eliminarrendimiento('<?php echo $data->Numero_de_Identificacion;?>')" class="btn btn-outline-danger" style='width:90px; height:40px'>Eliminar</button>
          </td>
        </tr>
    <?php

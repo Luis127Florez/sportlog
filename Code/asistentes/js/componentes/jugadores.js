@@ -1,3 +1,16 @@
+$(document).on("click", ".btn-outline-primary", function () {
+  $("#Guardar").hide();
+  $("#editar").show();
+});
+
+
+$(document).on("click", ".btn-outline-success", function () {
+  $("#Guardar").show();
+  $("#editar").hide();
+});
+
+
+
 
 $(document).ready(function(){
  $("#categoria1").keyup(function(){

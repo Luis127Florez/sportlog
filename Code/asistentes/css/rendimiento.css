@@ -6,6 +6,15 @@ height: 100%;
 font-family: 'Numans', sans-serif;
 }
 
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 50%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
  .form-control{
 
     margin-left: 15px;
