@@ -1,16 +1,95 @@
 
- 
+ <br>
+ <br>
+ <br>
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo base_url('asistentes/imagenes/aa.jpg');?>" class="d-block w-100" alt="..." style="" width="100" height="900"  >
+
+       <div style="margin-left: 470px; margin-right: 470px; " class="card">
+        <center>
+    <img style="width:90%; height:90%" src="<?php  echo base_url('asistentes/imagenes/ju 7.jpg'); ?>" class="card-img-top"  alt="...">
+    </center>
+    <div class="card-body">
+      <center><h5 class="card-title">Sportlog </h5></center>   
+      <p class="card-text">Nombre: jesus turizo</p>
+      <p class="card-text">Edad: 7 años</p>
+      <p class="card-text">NumeroID: 100298626</p>
+      <p class="card-text">Posicion: delantero</p>
+    </div>
+    <br>
+    <div class="card-footer">
+      <small class="text-muted">Categoria Pre-Pony</small>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="carousel-item">
+
+        <div style="margin-left: 470px; margin-right: 470px; " class="card">
+        <center>
+    <img style="width:90%; height:90%" src="<?php  echo base_url('asistentes/imagenes/ju 10.jpg'); ?>" class="card-img-top"  alt="...">
+    </center>
+    <div class="card-body">
+      <center><h5 class="card-title">Sportlog </h5></center>   
+      <p class="card-text">Nombre: Luis Florez</p>
+      <p class="card-text">Edad: 10 Años</p>
+      <p class="card-text">NumeroID: 1044943626</p>
+      <p class="card-text">Posicion: Medio Campista</p>
+    </div>
+    <br>
+    <div class="card-footer">
+      <small class="text-muted">Categoria Pony</small>
+    </div>
+  </div>
+
     </div>
     <div class="carousel-item">
-      <img src="<?php  echo base_url('asistentes/imagenes/bb.jpg'); ?>" class="d-block w-100" alt="..." style="" width="100" height="900" >
+
+       <div style="margin-left: 470px; margin-right: 470px; " class="card">
+        <center>
+    <img style="width:90%; height:90%" src="<?php  echo base_url('asistentes/imagenes/ju 15.png'); ?>" class="card-img-top"  alt="...">
+    </center>
+    <div class="card-body">
+      <center><h5 class="card-title">Sportlog </h5></center>   
+      <p class="card-text">Nombre: Moises Valencia</p>
+      <p class="card-text">Edad: 15 Años</p>
+      <p class="card-text">NumeroID: 1092940026</p>
+      <p class="card-text">Posicion: Delantero Izquierdo</p>
+    </div>
+    <br>
+    <div class="card-footer">
+      <small class="text-muted">Categoria Pre-Juvenil</small>
+    </div>
+  </div>
+  
+
     </div>
     <div class="carousel-item">
-      <img src="<?php  echo base_url('asistentes/imagenes/cc.jpg'); ?>" class="d-block w-100" alt="..." style="" width="100" height="900"  >
+      <div style="margin-left: 470px; margin-right: 470px; " class="card">
+        <center>
+    <img style="width:90%; height:90%" src="<?php  echo base_url('asistentes/imagenes/ju 21.png'); ?>" class="card-img-top"  alt="...">
+    </center>
+    <div class="card-body">
+      <center><h5 class="card-title">Sportlog </h5></center>   
+      <p class="card-text">Nombre: Santiago Diaz</p>
+      <p class="card-text">Edad: 21 Años</p>
+      <p class="card-text">NumeroID: 1003440026</p>
+      <p class="card-text">Posicion: Delantero</p>
     </div>
+    <br>
+    <div class="card-footer">
+      <small class="text-muted">Categoria Juvenil</small>
+    </div>
+  </div>
+      
+
+
+
+
+    </div>
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
